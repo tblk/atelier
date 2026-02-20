@@ -21,8 +21,8 @@ Avec theme_set() toutefois, ça ne pose aucun problème.
 }
 \examples{
 penguins |>
-ggplot2::ggplot(ggplot2::aes(x = bill_length_mm,
- y = flipper_length_mm,
+ggplot2::ggplot(ggplot2::aes(x = bill_len,
+ y = flipper_len,
   colour = species)) +
   legend_inside()
 }
