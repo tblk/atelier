@@ -20,9 +20,9 @@ Cette fonction doit être utilisée AVANT theme_...()
 Avec theme_set() toutefois, ça ne pose aucun problème.
 }
 \examples{
+library(ggplot2)
 penguins |>
-ggplot2::ggplot(ggplot2::aes(x = bill_len,
- y = flipper_len,
-  colour = species)) +
+ggplot(aes(x = bill_len, y = flipper_len, colour = species)) +
+  geom_point() +
   legend_inside()
 }
