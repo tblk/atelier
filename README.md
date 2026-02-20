@@ -44,7 +44,11 @@ penguins |>
   ggplot(aes(x = bill_length_mm,
              y = flipper_length_mm,
              colour = species)) +
-  legend_inside()
+  geom_point() +
+  legend_inside() +
+  theme_minimal()
+#> Warning: Removed 2 rows containing missing values or values outside the scale range
+#> (`geom_point()`).
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />

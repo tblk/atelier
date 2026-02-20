@@ -46,7 +46,9 @@ penguins |>
   ggplot(aes(x = bill_length_mm,
              y = flipper_length_mm,
              colour = species)) +
-  legend_inside()
+  geom_point() +
+  legend_inside() +
+  theme_minimal()
 ```
 
 ```{r}
