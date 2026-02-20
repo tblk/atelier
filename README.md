@@ -45,7 +45,7 @@ penguins |>
              y = flipper_length_mm,
              colour = species)) +
   geom_point() +
-  legend_inside() +
+  atelier::legend_inside() +
   theme_minimal()
 #> Warning: Removed 2 rows containing missing values or values outside the scale range
 #> (`geom_point()`).
