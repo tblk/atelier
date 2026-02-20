@@ -15,6 +15,10 @@ A ggplot object with legend insid
 \description{
 Title
 }
+\details{
+Cette fonction doit être utilisée AVANT theme_...()
+Avec theme_set() toutefois, ça ne pose aucun problème.
+}
 \examples{
 penguins |>
 ggplot2::ggplot(ggplot2::aes(x = bill_length_mm,

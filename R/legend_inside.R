@@ -2,6 +2,11 @@
 #'
 #' @param justification A vector of length 2
 #'
+#' @details
+#' Cette fonction doit être utilisée AVANT theme_...()
+#' Avec theme_set() toutefois, ça ne pose aucun problème.
+#'
+#'
 #' @returns A ggplot object with legend insid
 #' @export
 #'

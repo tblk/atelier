@@ -20,56 +20,28 @@ You can install the development version of atelier from
 pak::pak("tblk/atelier")
 ```
 
-## Example
+## Strings
 
-This is a basic example which shows you how to solve a common problem:
+Useful before `case_match()` for example :
 
 ``` r
-library(atelier)
-#> 
-#> Attachement du package : 'atelier'
-#> L'objet suivant est masqué depuis 'package:datasets':
-#> 
-#>     penguins
-acronym("Robert Hertz")
+atelier::acronym("Robert Hertz")
 #> [1] "rh"
 ```
 
-`legend_inside` is useful helper for ggplot2. Here is an example with
-the palmerpenguins::penguins data.
+## Plots
 
 ``` r
 library(ggplot2)
 penguins |>
-  ggplot(aes(x = bill_length_mm,
-             y = flipper_length_mm,
+  ggplot(aes(x = bill_len,
+             y = flipper_len,
              colour = species)) +
   geom_point() +
-  atelier::legend_inside() +
-  theme_minimal()
+  theme_minimal() +
+  atelier::legend_inside() # after calling theme_minimal()
 #> Warning: Removed 2 rows containing missing values or values outside the scale range
 #> (`geom_point()`).
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
-
-``` r
-citation("palmerpenguins")
-#> To cite palmerpenguins in publications use:
-#> 
-#>   Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer
-#>   Archipelago (Antarctica) penguin data. R package version 0.1.0.
-#>   https://allisonhorst.github.io/palmerpenguins/. doi:
-#>   10.5281/zenodo.3960218.
-#> 
-#> Une entrée BibTeX pour les utilisateurs LaTeX est
-#> 
-#>   @Manual{,
-#>     title = {palmerpenguins: Palmer Archipelago (Antarctica) penguin data},
-#>     author = {Allison Marie Horst and Alison Presmanes Hill and Kristen B Gorman},
-#>     year = {2020},
-#>     note = {R package version 0.1.0},
-#>     doi = {10.5281/zenodo.3960218},
-#>     url = {https://allisonhorst.github.io/palmerpenguins/},
-#>   }
-```

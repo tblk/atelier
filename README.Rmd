@@ -29,28 +29,23 @@ You can install the development version of atelier from [GitHub](https://github.
 pak::pak("tblk/atelier")
 ```
 
-## Example
+## Strings
 
-This is a basic example which shows you how to solve a common problem:
+Useful before `case_match()` for example :
 
 ```{r example}
-library(atelier)
-acronym("Robert Hertz")
+atelier::acronym("Robert Hertz")
 ```
 
-`legend_inside` is useful helper for ggplot2. Here is an example with the palmerpenguins::penguins data.
+## Plots
 
 ```{r}
 library(ggplot2)
 penguins |>
-  ggplot(aes(x = bill_length_mm,
-             y = flipper_length_mm,
+  ggplot(aes(x = bill_len,
+             y = flipper_len,
              colour = species)) +
   geom_point() +
-  atelier::legend_inside() +
-  theme_minimal()
-```
-
-```{r}
-citation("palmerpenguins")
+  theme_minimal() +
+  atelier::legend_inside() # after calling theme_minimal()
 ```
