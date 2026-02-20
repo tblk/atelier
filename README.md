@@ -7,8 +7,8 @@
 
 <!-- badges: end -->
 
-The goal of atelier is to gather functions I use across my projects. It
-is not made to be used by someone else.
+The goal of atelier is to gather small helper functions I use across my
+projects.
 
 ## Installation
 
@@ -26,30 +26,46 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(atelier)
+#> 
+#> Attachement du package : 'atelier'
+#> L'objet suivant est masqué depuis 'package:datasets':
+#> 
+#>     penguins
 acronym("Robert Hertz")
 #> [1] "rh"
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+`legend_inside` is useful helper for ggplot2. Here is an example with
+the palmerpenguins::penguins data.
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+library(ggplot2)
+penguins |>
+  ggplot(aes(x = bill_length_mm,
+             y = flipper_length_mm,
+             colour = species)) +
+  legend_inside()
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+``` r
+citation("palmerpenguins")
+#> To cite palmerpenguins in publications use:
+#> 
+#>   Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer
+#>   Archipelago (Antarctica) penguin data. R package version 0.1.0.
+#>   https://allisonhorst.github.io/palmerpenguins/. doi:
+#>   10.5281/zenodo.3960218.
+#> 
+#> Une entrée BibTeX pour les utilisateurs LaTeX est
+#> 
+#>   @Manual{,
+#>     title = {palmerpenguins: Palmer Archipelago (Antarctica) penguin data},
+#>     author = {Allison Marie Horst and Alison Presmanes Hill and Kristen B Gorman},
+#>     year = {2020},
+#>     note = {R package version 0.1.0},
+#>     doi = {10.5281/zenodo.3960218},
+#>     url = {https://allisonhorst.github.io/palmerpenguins/},
+#>   }
+```

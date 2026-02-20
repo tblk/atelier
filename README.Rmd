@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of atelier is to gather functions I use across my projects. It is not made to be used by someone else.
+The goal of atelier is to gather small helper functions I use across my projects.
 
 ## Installation
 
@@ -38,18 +38,17 @@ library(atelier)
 acronym("Robert Hertz")
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+`legend_inside` is useful helper for ggplot2. Here is an example with the palmerpenguins::penguins data.
 
-```{r cars}
-summary(cars)
+```{r}
+library(ggplot2)
+penguins |>
+  ggplot(aes(x = bill_length_mm,
+             y = flipper_length_mm,
+             colour = species)) +
+  legend_inside()
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+```{r}
+citation("palmerpenguins")
 ```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
