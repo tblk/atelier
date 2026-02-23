@@ -2,5 +2,7 @@
 
 export(acronym)
 export(full_wtd_summarise)
+export(label_x_keuros)
+export(label_y_keuros)
 export(legend_inside)
 importFrom(rlang,.data)

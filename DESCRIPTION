@@ -9,6 +9,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Suggests: 
+    showtext,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 URL: https://github.com/tblk/atelier
@@ -19,7 +20,8 @@ Imports:
     ggplot2,
     purrr,
     rlang,
+    scales,
     tidyr
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1)
 LazyData: true
