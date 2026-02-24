@@ -19,18 +19,14 @@ rare_cats <- function(
 
   # ---- fréquences ----
   freq_tbl <-
-    purrr::map(
-      data,
-      function(.x, var_name) {
-
-        tibble::tibble(modalite = .x) |>
-          dplyr::count(.data$modalite, name = "effectif") |>
-          dplyr::mutate(
-            pourcentage = 100 * .data$effectif / sum(.data$effectif),
-            variable = var_name
-          )
-      }
-    ) |>
+    purrr::map(names(data), function(var_name) {
+      tibble::tibble(modalite = data[[var_name]]) |>
+        dplyr::count(.data$modalite, name = "effectif") |>
+        dplyr::mutate(
+          pourcentage = 100 * .data$effectif / sum(.data$effectif),
+          variable = var_name
+        )
+    }) |>
     purrr::list_rbind()
 
   # ---- condition rareté ----
