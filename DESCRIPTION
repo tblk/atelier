@@ -21,6 +21,7 @@ Imports:
     purrr,
     rlang,
     scales,
+    stringr,
     tidyr
 Depends: 
     R (>= 4.1)
