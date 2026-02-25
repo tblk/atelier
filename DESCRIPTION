@@ -17,6 +17,7 @@ BugReports: https://github.com/tblk/atelier/issues
 Imports: 
     collapse,
     dplyr,
+    FactoMineR,
     ggplot2,
     purrr,
     rlang,
