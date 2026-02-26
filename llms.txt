@@ -1,0 +1,66 @@
+# atelier
+
+The goal of atelier is to gather small helper functions I use across my
+projects.
+
+## Installation
+
+You can install the development version of atelier from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("tblk/atelier")
+```
+
+## Strings
+
+Useful before `case_match()` for example :
+
+``` r
+atelier::acronym("Robert Hertz")
+#> [1] "rh"
+```
+
+## Plots
+
+``` r
+library(ggplot2)
+penguins |>
+  ggplot(aes(x = bill_len,
+             y = flipper_len,
+             colour = species)) +
+  geom_point() +
+  theme_minimal() +
+  atelier::legend_inside() # after calling theme_minimal()
+#> Warning: Removed 2 rows containing missing values or values outside the scale range
+#> (`geom_point()`).
+```
+
+![](reference/figures/README-unnamed-chunk-2-1.png)
+
+# Package index
+
+## All functions
+
+- [`acronym()`](https://tblk.github.io/atelier/reference/acronym.md) :
+  Create lowercase acronym
+- [`full_wtd_summarise()`](https://tblk.github.io/atelier/reference/full_wtd_summarise.md)
+  : Get weighted mean and quantiles by group
+- [`label_x_keuros()`](https://tblk.github.io/atelier/reference/label_x_keuros.md)
+  : Title Label x axis in k euros
+- [`label_y_keuros()`](https://tblk.github.io/atelier/reference/label_y_keuros.md)
+  : Title Label y axis in k euros
+- [`legend_inside()`](https://tblk.github.io/atelier/reference/legend_inside.md)
+  : Title
+- [`prepare_acm_data()`](https://tblk.github.io/atelier/reference/prepare_acm_data.md)
+  : Préparer des données pour une ACM
+- [`rare_cats()`](https://tblk.github.io/atelier/reference/rare_cats.md)
+  : Détecter les modalités rares pour une ACM
+- [`run_acm()`](https://tblk.github.io/atelier/reference/run_acm.md) :
+  Exécuter une ACM
+- [`shape_acm()`](https://tblk.github.io/atelier/reference/shape_acm.md)
+  : Pipeline complet ACM
+- [`tidy_acm()`](https://tblk.github.io/atelier/reference/tidy_acm.md) :
+  Construire un tableau consolidé des résultats d'ACM
+
