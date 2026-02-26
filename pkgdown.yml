@@ -1,8 +1,9 @@
 pandoc: 3.1.11
 pkgdown: 2.2.0
 pkgdown_sha: ~
-articles: {}
-last_built: 2026-02-26T11:26Z
+articles:
+  acm: acm.html
+last_built: 2026-02-26T12:09Z
 urls:
   reference: https://tblk.github.io/atelier/reference
   article: https://tblk.github.io/atelier/articles
