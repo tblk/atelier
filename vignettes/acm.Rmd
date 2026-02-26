@@ -1,0 +1,50 @@
+---
+title: "ACM"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{acm}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(atelier)
+```
+
+Il existe plusieurs excellents packages pour l'analyse géométrique de données et l'interprétation des résultats. Une liste, sans doute non exhaustive :
+
+- FactoMineR
+- GDAtools
+- ade4
+- ca
+- vegan
+- dimensio
+
+dimensio est *a priori* le plus récent. C'est celui que j'utilise, pour les raisons suivantes : 
+
+1) Il n'a aucune dépendance externe, donc il s'installe très rapidement et on peut supposer que cela rendra sa maintenance à long terme plus simple.
+2) Il est très facile de récupérer les résultats sous forme de dataframe, pour des graphes personnalisés avec ggplot2.
+3) L'API est minimaliste, il y a peu de fonctions il est donc très facile à prendre en main.
+
+Étant simple et minimaliste, il lui manque toutefois quelques fonctionnalités présentes dans les packages plus anciens.
+
+FactoMineR et GDAtools, en particulier, permettent de réaliser des **ACM spécifiques**. Ces ACM acceptent non seulement des individus et variables supplémentaires (ce qui n'est pas bien compliqué à mettre en oeuvre), mais aussi des **modalités supplémentaires**. Et ça, c'est particulièrement utile. 
+
+En effet, le problème des ACM est qu'elles sont très affectées par les modalités... les plus rares. C'est à dire, en premier lieu, par les non-réponses au différentes variables (qui sont souvent très corrélées, pour ne rien arranger). Mais aussi par de petites modalités insignifiantes. Les ACM spécifiques permettent d'écarter *a priori* ces modalités de la *construction* de l'ACM sans avoir à les enlever des données.
+
+GDAtools propose des fonctions utiles pour sélectionner les modalités à écarter (`getindexcat`), et même une interface graphique pour le faire interactivement (en lançant `ijunk`). 
+
+On peut toutefois faire plus rapide, surtout si l'on pense que les ACM sont construites en pratique par tâtonnements itératifs, en enlevant et ajoutant certaines variables ou certains individus. Pour éviter que des erreurs ne se glissent dans le processus, il est donc important de pouvoir :
+
+1) Spécifier les variables actives et supplémentaires de manière *transparente*, par leur nom et non par leur index.
+2) Passer automatiquement les non-réponses et les catégories très rares en modalités supplémentaires. Encore une fois, cela ne signifie pas qu'elles n'apparaîtront pas à la fin. Simplement, elles n'affecterons pas de manière disproportionnée la construction des axes.
+
+C'est ce que la fonction `atelier::shape_acm` permet de faire. 
+
