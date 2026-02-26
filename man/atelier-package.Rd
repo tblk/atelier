@@ -12,6 +12,7 @@ Provides personnal shortcuts for data wrangling, plotting, and statitics, based 
 Useful links:
 \itemize{
   \item \url{https://github.com/tblk/atelier}
+  \item \url{https://tblk.github.io/atelier/}
   \item Report bugs at \url{https://github.com/tblk/atelier/issues}
 }
 
