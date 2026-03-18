@@ -4,16 +4,12 @@
 \alias{rare_cats}
 \title{Détecter les modalités rares pour une ACM}
 \usage{
-rare_cats(data, min_pct = 5, detect_na = TRUE, na_pattern = "\\\\sNA$")
+rare_cats(data, min_pct = 5)
 }
 \arguments{
 \item{data}{data.frame de variables qualitatives}
 
 \item{min_pct}{seuil minimal de fréquence (\%)}
-
-\item{detect_na}{exclure les modalités correspondant à NA recodés}
-
-\item{na_pattern}{regex identifiant les NA recodés}
 }
 \value{
 Un vecteur de modalités à exclure
