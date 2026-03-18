@@ -6,7 +6,7 @@ et/ou NA recodés).
 ## Usage
 
 ``` r
-rare_cats(data, min_pct = 5, detect_na = TRUE, na_pattern = "\\sNA$")
+rare_cats(data, min_pct = 5)
 ```
 
 ## Arguments
@@ -18,14 +18,6 @@ rare_cats(data, min_pct = 5, detect_na = TRUE, na_pattern = "\\sNA$")
 - min_pct:
 
   seuil minimal de fréquence (%)
-
-- detect_na:
-
-  exclure les modalités correspondant à NA recodés
-
-- na_pattern:
-
-  regex identifiant les NA recodés
 
 ## Value
 

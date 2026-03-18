@@ -61,6 +61,4 @@ pouvoir :
     n’affecterons pas de manière disproportionnée la construction des
     axes.
 
-C’est ce que la fonction
-[`atelier::shape_acm`](https://tblk.github.io/atelier/reference/shape_acm.md)
-permet de faire.
+C’est ce que la fonction `atelier::shape_acm` permet de faire.
