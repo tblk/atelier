@@ -57,8 +57,8 @@ penguins |>
   Préparer des données pour une ACM
 - [`rare_cats()`](https://tblk.github.io/atelier/reference/rare_cats.md)
   : Détecter les modalités rares pour une ACM
-- [`tidy_acm()`](https://tblk.github.io/atelier/reference/tidy_acm.md) :
-  Construire un tableau consolidé des résultats d'ACM
+- [`tidy_vars()`](https://tblk.github.io/atelier/reference/tidy_vars.md)
+  : tidy MCA infos on vars
 
 # Articles
 
