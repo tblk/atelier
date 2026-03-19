@@ -1,5 +1,4 @@
-
-#' Title
+#' Wrapper for FactoMineR spec MCA
 #'
 #' @param data A dataframe with active variables only
 #' @param min_pct Minimum threshold to keep modalities

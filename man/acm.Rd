@@ -2,7 +2,7 @@
 % Please edit documentation in R/acm.R
 \name{acm}
 \alias{acm}
-\title{Title}
+\title{Wrapper for FactoMineR spec MCA}
 \usage{
 acm(data, min_pct)
 }
@@ -15,5 +15,5 @@ acm(data, min_pct)
 A FactoMineR MCA
 }
 \description{
-Title
+Wrapper for FactoMineR spec MCA
 }

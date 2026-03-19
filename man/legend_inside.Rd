@@ -2,7 +2,7 @@
 % Please edit documentation in R/legend_inside.R
 \name{legend_inside}
 \alias{legend_inside}
-\title{Title}
+\title{Legend inside ggplot}
 \usage{
 legend_inside(justification = c(0, 1))
 }
@@ -13,7 +13,7 @@ legend_inside(justification = c(0, 1))
 A ggplot object with legend insid
 }
 \description{
-Title
+Legend inside ggplot
 }
 \details{
 Cette fonction doit être utilisée AVANT theme_...()

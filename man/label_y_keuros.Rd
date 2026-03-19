@@ -2,7 +2,7 @@
 % Please edit documentation in R/label_y_keuros.R
 \name{label_y_keuros}
 \alias{label_y_keuros}
-\title{Title Label y axis in k euros}
+\title{Label y axis in k euros}
 \usage{
 label_y_keuros()
 }
@@ -10,7 +10,7 @@ label_y_keuros()
 a ggplot object
 }
 \description{
-Title Label y axis in k euros
+Label y axis in k euros
 }
 \details{
 Some graphic devices may require the \pkg{showtext} package

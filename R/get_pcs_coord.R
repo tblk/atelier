@@ -1,4 +1,4 @@
-#' Title Get PCS coord after dimension reduction
+#' Get PCS coord after dimension reduction
 #'
 #' @param data a dataframe with dimensions and pcs grouping variables
 #' @param var a pcs niv

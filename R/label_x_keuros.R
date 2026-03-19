@@ -1,4 +1,4 @@
-#' Title Label x axis in k euros
+#' Label x axis in k euros
 #'
 #' @details
 #' Some graphic devices may require the \pkg{showtext} package

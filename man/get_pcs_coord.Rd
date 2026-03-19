@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_pcs_coord.R
 \name{get_pcs_coord}
 \alias{get_pcs_coord}
-\title{Title Get PCS coord after dimension reduction}
+\title{Get PCS coord after dimension reduction}
 \usage{
 get_pcs_coord(data, var)
 }
@@ -15,5 +15,5 @@ get_pcs_coord(data, var)
 a summarised dataframe
 }
 \description{
-Title Get PCS coord after dimension reduction
+Get PCS coord after dimension reduction
 }

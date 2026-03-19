@@ -1,4 +1,4 @@
-#' Title
+#' Legend inside ggplot
 #'
 #' @param justification A vector of length 2
 #'

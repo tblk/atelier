@@ -2,7 +2,7 @@
 % Please edit documentation in R/label_x_keuros.R
 \name{label_x_keuros}
 \alias{label_x_keuros}
-\title{Title Label x axis in k euros}
+\title{Label x axis in k euros}
 \usage{
 label_x_keuros()
 }
@@ -10,7 +10,7 @@ label_x_keuros()
 a ggplot object
 }
 \description{
-Title Label x axis in k euros
+Label x axis in k euros
 }
 \details{
 Some graphic devices may require the \pkg{showtext} package

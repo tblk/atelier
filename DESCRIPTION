@@ -21,12 +21,14 @@ Imports:
     dplyr,
     FactoMineR,
     ggplot2,
+    gtsummary,
     purrr,
     rlang,
     scales,
     stringr,
     tibble,
-    tidyr
+    tidyr,
+    tidyselect
 Depends: 
     R (>= 4.1)
 LazyData: true
