@@ -3,6 +3,7 @@
 export(acm)
 export(acronym)
 export(full_wtd_summarise)
+export(get_pcs_coord)
 export(label_x_keuros)
 export(label_y_keuros)
 export(legend_inside)
