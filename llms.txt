@@ -43,6 +43,7 @@ penguins |>
 
 ## All functions
 
+- [`acm()`](https://tblk.github.io/atelier/reference/acm.md) : Title
 - [`acronym()`](https://tblk.github.io/atelier/reference/acronym.md) :
   Create lowercase acronym
 - [`full_wtd_summarise()`](https://tblk.github.io/atelier/reference/full_wtd_summarise.md)
