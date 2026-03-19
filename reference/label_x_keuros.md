@@ -1,6 +1,6 @@
-# Title Label x axis in k euros
+# Label x axis in k euros
 
-Title Label x axis in k euros
+Label x axis in k euros
 
 ## Usage
 

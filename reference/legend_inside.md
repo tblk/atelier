@@ -1,6 +1,6 @@
-# Title
+# Legend inside ggplot
 
-Title
+Legend inside ggplot
 
 ## Usage
 

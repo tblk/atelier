@@ -1,6 +1,6 @@
-# Title Get PCS coord after dimension reduction
+# Get PCS coord after dimension reduction
 
-Title Get PCS coord after dimension reduction
+Get PCS coord after dimension reduction
 
 ## Usage
 

@@ -1,6 +1,6 @@
-# Title
+# Wrapper for FactoMineR spec MCA
 
-Title
+Wrapper for FactoMineR spec MCA
 
 ## Usage
 
