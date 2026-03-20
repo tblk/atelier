@@ -63,8 +63,10 @@ penguins |>
   : Détecter les modalités rares pour une ACM
 - [`tblk_summary()`](https://tblk.github.io/atelier/reference/tblk_summary.md)
   : Personnalised tbl_summary
+- [`tidy_excl_coord()`](https://tblk.github.io/atelier/reference/tidy_excl_coord.md)
+  : tidy excluded modalities
 - [`tidy_vars()`](https://tblk.github.io/atelier/reference/tidy_vars.md)
-  : tidy MCA infos on vars
+  : tidy active vars MCA metrics
 
 # Articles
 

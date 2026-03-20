@@ -1,6 +1,6 @@
-# tidy MCA infos on vars
+# tidy active vars MCA metrics
 
-tidy MCA infos on vars
+tidy active vars MCA metrics
 
 ## Usage
 
