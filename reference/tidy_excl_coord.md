@@ -5,7 +5,7 @@ tidy excluded modalities
 ## Usage
 
 ``` r
-tidy_excl_coord(x)
+tidy_excl_coord(x, out_pattern = "(REFUS)|(NSP)|(NA)$")
 ```
 
 ## Arguments
@@ -13,6 +13,10 @@ tidy_excl_coord(x)
 - x:
 
   A MCA object
+
+- out_pattern:
+
+  pattern to filter out, default to NSP, NA, REFUS
 
 ## Value
 
