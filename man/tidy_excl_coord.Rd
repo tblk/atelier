@@ -4,10 +4,12 @@
 \alias{tidy_excl_coord}
 \title{tidy excluded modalities}
 \usage{
-tidy_excl_coord(x)
+tidy_excl_coord(x, out_pattern = "(REFUS)|(NSP)|(NA)$")
 }
 \arguments{
 \item{x}{A MCA object}
+
+\item{out_pattern}{pattern to filter out, default to NSP, NA, REFUS}
 }
 \value{
 a dataframe of excl coordinates

@@ -8,7 +8,7 @@ tidy_vars = function(x) {
 
   x$var[1:4] |>
     purrr::map(~as.data.frame(.x) |>
-                 tibble::rownames_to_column(var = "variable_modalite")) |>
+                 tibble::rownames_to_column(var = "varmod")) |>
     purrr::list_rbind(names_to = "indicateur") |>
     dplyr::rename_with(~stringr::str_replace(.x, " ", "")) |>
     dplyr::rename_with(tolower) |>
