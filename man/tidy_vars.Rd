@@ -2,7 +2,7 @@
 % Please edit documentation in R/tidy_vars.R
 \name{tidy_vars}
 \alias{tidy_vars}
-\title{tidy MCA infos on vars}
+\title{tidy active vars MCA metrics}
 \usage{
 tidy_vars(x)
 }
@@ -14,5 +14,5 @@ Un data.frame avec toutes les informations sur les
 variables/modalités actives
 }
 \description{
-tidy MCA infos on vars
+tidy active vars MCA metrics
 }

@@ -1,4 +1,4 @@
-#' tidy MCA infos on vars
+#' tidy active vars MCA metrics
 #'
 #' @param x Le résultat de FactoMineR::MCA
 #' @return Un data.frame avec toutes les informations sur les
